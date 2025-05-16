@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="output.css">
+    <title>LoopStudio</title>
+    
+</head>
+<body>
+    <header class="py-[5vh] x-pad flex justify-between items-center relative alata">
+        <a href="#">
+            <img src="./images/logo.svg" alt="logo-icon">
+        </a>
+        <nav id="desktop-nav" class="hidden md:flex md:justify-between w-[45%] text-white">
+            <a href="">About</a>
+            <a href="">Careers</a>
+            <a href="">Events</a>
+            <a href="">Products</a>
+            <a href="">Support</a>
+        </nav>
+        <nav id="mobile-nav" class="absolute top-full left-0 bg-black text-white hidden flex-col justify-center gap-8 text-2xl w-full px-[5vw] h-[calc(100vh-88px)]">
+            <a href="w-[10%]">ABOUT</a>
+            <a href="">CAREERS</a>
+            <a href="">EVENTS</a>
+            <a href="">PRODUCTS</a>
+            <a href="">SUPPORT</a>
+        </nav>
+        <div id="toggle" class="md:hidden">
+            <img id="burger" src="./images/icon-hamburger.svg" alt="burger-icon">
+            <img id="close" class="hidden" src="./images/icon-close.svg" alt="close-menu icon">
+        </div>
+    </header>
+
+    <main class="x-pad">
+        <section class="h-[calc(100vh-88px)] flex items-center">
+            <div class="border-2 border-white p-4 sm:min-h-[300px] sm:max-w-[65%] ">
+                <h1 class="text-white text-4xl font-extralight sm:text-6xl md:text-7xl lg:text-8xl">IMMERSIVE EXPERIENCES THAT DELIVER</h1>
+            </div>
+        </section>
+
+        <section class="my-20 relative">
+            <div>
+                <img class="sm:hidden" src="./images/mobile/image-interactive.jpg" alt="interactive-vr">
+                <img class="hidden sm:inline max-lg:w-full" src="./images/desktop/image-interactive.jpg" alt="">
+            </div>
+            <article class="text-center lg:text-left lg:absolute lg:right-0 lg:w-1/2 lg:top-[40%] lg:bg-white lg:p-12">
+                <h2 class="lg:leading-12">THE LEADER IN INTERACTIVE vr</h2>
+                <p class="text-very-dark-gray">
+                    Founded in 2011. LoopStudio has been producing world-class virtual reality projects for some of the best companies around the globe. Our award-winning creations have tranformed businesses through digital experiences that bind to their brand
+                </p>
+            </article>
+        </section>
+
+        <section class="lg:mt-[200px] relative">
+            <div class="lg:flex lg:justify-between lg:items-center">
+                <h2 class="text-center lg:text-left">our creations</h2>
+                <button class="border-1 border-black w-[100px] px-3 mt-10 josefin-sans absolute top-full left-1/2 -translate-x-1/2">SEE ALL</button>
+            </div>
+            
+            <div class="grid lg:grid-cols-4 lg:grid-rows-2 gap-6">
+                <div class="card">
+                    <img class="lg:hidden w-full" src="./images/mobile/image-deep-earth.jpg" alt="earth">
+                    <img class="hidden lg:inline" src="./images/desktop/image-deep-earth.jpg" alt="earth">
+                    <h3>deep earth</h3>
+                </div>
+                <div class="card">
+                    <img class="lg:hidden w-full" src="./images/mobile/image-night-arcade.jpg" alt="earth">
+                    <img class="hidden lg:inline" src="./images/desktop/image-night-arcade.jpg" alt="earth">
+                    <h3>night arcade</h3>
+                </div>
+                <div class="card">
+                    <img class="lg:hidden w-full" src="./images/mobile/image-soccer-team.jpg" alt="earth">
+                    <img class="hidden lg:inline" src="./images/desktop/image-soccer-team.jpg" alt="earth">
+                    <h3>soccer team vr</h3>
+                </div>
+                <div class="card">
+                    <img class="lg:hidden w-full" src="./images/mobile/image-grid.jpg" alt="earth">
+                    <img class="hidden lg:inline" src="./images/desktop/image-grid.jpg" alt="earth">
+                    <h3>The grid</h3>
+                </div>
+                <div class="card">
+                    <img class="lg:hidden w-full" src="./images/mobile/image-from-above.jpg" alt="earth">
+                    <img class="hidden lg:inline" src="./images/desktop/image-from-above.jpg" alt="earth">
+                    <h3>from up above vr</h3>
+                </div>
+                <div class="card">
+                    <img class="lg:hidden w-full" src="./images/mobile/image-pocket-borealis.jpg" alt="earth">
+                    <img class="hidden lg:inline" src="./images/desktop/image-pocket-borealis.jpg" alt="earth">
+                    <h3>The grid</h3>
+                </div>
+                <div class="card">
+                    <img class="lg:hidden w-full" src="./images/mobile/image-curiosity.jpg" alt="earth">
+                    <img class="hidden lg:inline" src="./images/desktop/image-curiosity.jpg" alt="earth">
+                    <h3>The cursiosity</h3>
+                </div>
+                <div class="card">
+                    <img class="lg:hidden w-full" src="./images/mobile/image-fisheye.jpg" alt="earth">
+                    <img class="hidden lg:inline" src="./images/desktop/image-fisheye.jpg" alt="earth">
+                    <h3>make it fisheye</h3>
+                </div>
+            </div>
+        </section>
+
+        
+    </main>
+    <footer class="bg-black mt-[100px] p-10 flex flex-col items-center gap-6 lg:grid lg:grid-cols-2 x-pad">
+        <a href="#" class="w-1/3">
+            <img src="./images/logo.svg" alt="logo-icon">
+        </a>
+        <nav class="text-white flex flex-col gap-5 lg:flex-row lg:col-start-1 lg:row-start-2">
+            <a href="">About</a>
+            <a href="">Careers</a>
+            <a href="">Events</a>
+            <a href="">Products</a>
+            <a href="">Support</a>
+        </nav>
+        <div class="flex gap-3 lg:justify-end">
+            <img src="./images/icon-facebook.svg" alt="">
+            <img src="./images/icon-twitter.svg" alt="">
+            <img src="./images/icon-pinterest.svg" alt="">
+            <img src="./images/icon-instagram.svg" alt="">
+        </div>
+        <p class="text-dark-gray lg:text-right">&copy; 2021 LoopStudio. All rights reserved.</p>
+    </footer>
+
+
+    <script>
+        document.querySelector("#toggle").addEventListener("click", ()=> {
+            const mobileNav = document.querySelector("#mobile-nav");
+            const header = document.querySelector("header");
+            const burger = document.querySelector("#burger");
+            const close = document.querySelector("#close");
+            if (mobileNav.style.display != "flex") {
+                header.style.backgroundColor = "black"
+                mobileNav.style.display = "flex";
+                burger.style.display = "none"
+                close.style.display = "inline"
+
+            } else {
+                mobileNav.style.display = "none";
+                header.style.backgroundColor = "transparent"
+                burger.style.display = "inline"
+                close.style.display = "none"
+            }
+            
+        })
+    </script>
+</body>
+</html>

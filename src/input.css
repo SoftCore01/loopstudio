@@ -1,0 +1,83 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+@theme {
+    --color-white: hsl(0, 0%, 100%);
+    --color-black: hsl(0, 0%, 0%);
+    --color-dark-gray: hsl(0, 0%, 55%);
+    --color-very-dark-gray: hsl(0, 0%, 41%);
+}
+
+@layer base {
+    h2  {
+        font-size: calc(1.5rem + 1.5vw);
+        text-transform: uppercase;
+        font-family: "Josefin Sans", sans-serif;
+        font-weight: lighter;
+        @apply text-black;
+        line-height: 2rem;
+        margin: 24px 0;
+    }
+
+    p {
+        font-size: calc(1rem + 0.3vw);
+    }
+
+    h3 {
+        font-size: calc(1.5rem + 0.75vw);
+        text-transform: uppercase;
+        @apply text-white;
+        position: absolute;
+        bottom: 0;
+        margin: 24px;
+        font-weight: 200;
+        width: 30%;
+        line-height: 2rem;
+    }
+    
+}
+
+
+@layer components {
+    .card {
+        position: relative;
+        @apply hover:opacity-70;
+    }
+
+}
+
+body {
+    background-image: url("./images/mobile/image-hero.jpg");
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    
+}
+
+.x-pad {
+    @apply px-[5vw];
+}
+
+img {
+    @apply max-w-full;
+}
+.a {
+    display: inline;
+}
+.alata {
+    font-family: "Alata", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.josefin-sans {
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 300;
+}
+
+@media screen and (min-width: 48rem) {
+    body {
+        background-image: url(./images/desktop/image-hero.jpg);
+        background-size: 100vw 100vh;
+    }
+    
+}
